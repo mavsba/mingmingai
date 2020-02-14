@@ -27,14 +27,17 @@ new Vue({
 	mounted(){},
 	
 	methods:{
+		clear(){
+			storage.removeItem("isOver");
+		},
 		startLottery(){
 			if (!this.click) { return }
-			if (JSON.parse(window.localStorage.getItem("isOver"))) {
+			if (JSON.parse(window.localStorage.getItem("xxx"))) {
 				alert(
 				  "别太贪了！你已经抽过了，你那点小心思我再不懂？没看到下面写着新用户只能免费抽一次么？你重新刷新也没用！哈哈哈"
 				);
 			  } else {
-				window.localStorage.setItem("isOver", JSON.stringify(true));
+				window.localStorage.setItem("xxx", JSON.stringify(true));
 				this.startRoll(); 
 			  }
 			  
