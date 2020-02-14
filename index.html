@@ -10,7 +10,9 @@
 <body>
 <div class="lottery-box" id="app">
   <h1 class="title">情人节琦哥抽奖环节！</h1>
-  <div class="lottery">
+  <h1 class="title">祝你中奖，干就完了奥利给！</h1>
+  <img style="position: absolute; left:590px; top: 0;" src="./img/1.png" alt="">
+  <div style="position: absolute;  left:775px; top: 376px;" class="lottery">
     <div class="lottery-item">
       <div class="lottery-start">
         <div class="box gray" v-if="isStart===0">
@@ -36,7 +38,7 @@
   </div>  
 
 
-  <div class="rule" style="margin-top: 20px; border-radius: 10px;">
+  <div class="rule" style="margin-top: 20px; border-radius: 10px;position: absolute;  left:775px; top: 800px;">
     <p>抽奖活动规则</p>
     <p>1、新用户第一次抽奖免费;</p>
     <p>2、如想再次抽奖请联系管理员：王仙琦。注明：20元一次、最多可抽5次;</p>
@@ -50,7 +52,7 @@
    <h2>获得{{list[index].title}}</h2>
    <div class="btnsave" @click="showToast=false">确定</div> 
 </div>  
-</div>
+</h1>
 
 
 <script src="js/lottery.js"></script>
