@@ -45,6 +45,7 @@ ul, li {
 }
 .lottery-box {
     overflow: hidden;
+    height:1000px;
     background: url("../img/");
 }
 .lottery-box .title {
